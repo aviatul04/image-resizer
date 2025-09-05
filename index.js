@@ -49,7 +49,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.post('/processimage', upload.single('file'), (req, res) => {
+
+app.post('/.netlify/functions/processimage', upload.single('file'), (req, res) => {
     format = req.body.myfile;
     width = parseInt(req.body.width);
     height = parseInt(req.body.height);
@@ -103,7 +104,6 @@ function processImage(width, height, req, res) {
             });
         });
 }
-
 
 // Start server
 app.listen(port, () => {
