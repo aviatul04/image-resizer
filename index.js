@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.post('/.netlify/functions/processimage', upload.single('file'), (req, res) => {
+app.post('/processimage', upload.single('file'), (req, res) => {
     format = req.body.myfile;
     width = parseInt(req.body.width);
     height = parseInt(req.body.height);
@@ -109,3 +109,4 @@ function processImage(width, height, req, res) {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
