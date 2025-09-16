@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,3 +50,56 @@
 
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>image-resizer</title>
+        <link rel="stylesheet" href="index.css">
+         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3" -->
+    </head>
+    <body>
+        <header>
+
+            <div class="nav">
+                <h2>Image Resizer </h2>
+            </div>
+
+        </header>
+
+        <div class="section">
+
+            
+            <h3>Resize your Image</h3>
+            <form action="/processimage" method="post" enctype="multipart/form-data">
+
+                <label>Choose file</label>
+                <input type="file" name="file" id="file" class="form-control"><br>
+                <label class="radio-inline">Choose file format</label><br>
+                <input type="radio" name="myfile" id="jpg" value="jpg">
+                <label for="jpg">jpg</label>
+                <input type="radio" name="myfile" id="jpeg" value="jpeg">
+                <label for="jpeg">jpeg</label>
+                <input type="radio" name="myfile" id="png" value="png">
+                <label for="png">png</label><br>
+                <label for="dimension" name="dimension" class="form-group">Width : </label>
+                <input type="number" id="width" name="width"><br>
+                <label for="dimension" name="dimension" class="form-group">Height : </label>
+                <input type="number" id="height" name="height"><br>
+                <button type="submit" class="btn">Download</button>
+
+            </form>
+
+        </div>
+        <footer>
+            <h3>About Us</h3>
+            <p>Contact us : +91 9368456449</p>
+            <p>Email : image_resizer@gmail.com</p>
+    
+        </footer>
+
+    </body>
+
+
+</html>
+>>>>>>> 8272693 (First commit)
