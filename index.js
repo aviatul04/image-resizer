@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require('express');
 const multer = require('multer');
 const imageSize = require('image-size');
@@ -110,6 +110,7 @@ function processImage(width, height, req, res) {
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
 
 =======
 const express = require('express');
